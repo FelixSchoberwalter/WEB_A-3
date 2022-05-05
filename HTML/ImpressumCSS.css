@@ -1,0 +1,147 @@
+@font-face{
+    font-family: robotoRegular;
+    src: url(Roboto-Regular.ttf);
+}
+
+*{
+    font-family: robotoRegular;
+     margin: 0;
+     padding: 0;
+
+}
+
+main{
+
+
+
+    background-color: #318CB8 ;
+    color: #FFFFFF;
+}
+
+#impressumUeberschrift{
+
+    font-size: 32px;
+    padding-top: 40px;
+    padding-left: 50px;
+
+}
+
+#impressumText{
+
+    font-size: 24px;
+    padding-left: 50px;
+    padding-bottom: 75px;
+    font-weight:normal;
+
+}
+
+
+
+
+
+
+
+
+
+header {
+    background-color: #224E6B;
+   margin: 0;
+     padding: 0;
+     height: 125px;
+     width: 100%;
+     position: relative; 
+
+}
+
+#homebutton{
+
+    position: absolute;
+    
+    margin-top: 50px;
+    margin-left: 300px;
+   
+   
+}
+
+#überunsbutton{
+
+    position: absolute;
+   
+    margin-top: 50px;
+    margin-left: 375px;
+    
+   
+   
+}
+
+
+#fahrzeughinzufügenbutton{
+
+    position: absolute;
+    
+    margin-top: 40px;
+    margin-left: 1750px;
+    
+   text-align: center;
+   
+  
+}
+
+
+a {
+    text-decoration: none;
+    color: #FFFFFF;
+
+}
+
+footer{
+
+    background-color: #224E6B;
+    color: #FFFFFF;
+    font-size: 16px;
+    
+    position: relative;
+    bottom: 0;
+    height: 125px;
+    width: 100%;
+
+}
+
+h2 {
+    
+    font-size: 24px;
+    font-weight:normal;
+
+}
+
+#logo{
+   
+    position: absolute;
+    width: 270px;
+    margin-left: 15px;
+    margin-top: -15px;
+    
+    
+}
+
+
+.rechtliches{
+
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 225px;
+    
+    float: left;
+}
+
+.kontakt{
+
+    position: absolute;
+    margin-top: 10px;
+     display: block;
+    margin-left: 1500px;
+    float: right;
+
+
+    
+}

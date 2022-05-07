@@ -25,6 +25,8 @@ h2 {
 main{
     background-color: #318CB8 ;
     color: #FFFFFF;
+    min-height: 500px;
+    width: 100%;
 }
 
 /* Header / Footer*/
@@ -33,29 +35,31 @@ header {
     background-color: #224E6B;
     margin: 0;
     padding: 0;
-    height: 125px;
+    min-height: 125px;
     width: 100%;
     position: relative; 
 }
 
-#homebutton{
+#homebutton {
     position: absolute;
     margin-top: 50px;
     margin-left: 300px;
-}
-
-#fahrzeughinzufügenbutton{
-    position: absolute;
-    margin-top: 40px;
-    margin-left: 1750px;
-    text-align: center;
-}
-
-#überunsbutton{
+  }
+  
+  #überunsbutton {
     position: absolute;
     margin-top: 50px;
     margin-left: 375px;
-}
+  }
+  
+  #fahrzeughinzufügenbutton {
+    position: absolute;
+  
+    margin-top: 40px;
+    margin-left: 1750px;
+  
+    text-align: center;
+  }
 
 #logo{
     position: absolute;

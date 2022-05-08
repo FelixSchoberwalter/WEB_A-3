@@ -1,6 +1,6 @@
 @font-face {
   font-family: robotoRegular;
-  src: url(/Media/Roboto-Regular.ttf);
+  src: url(/Media/Roboto/Roboto-Regular.ttf);
 }
 
 * {
@@ -24,14 +24,13 @@ h2 {
 main {
   background-color: #318cb8;
   color: #ffffff;
-  min-height: 80vh;
+  height: 100%;
   width: 100%;
 }
 
 /* Header / Footer*/
-
 header {
-  background-color: #0B2F47;
+  background-color: #0b2f47;
   min-height: 100px;
   width: 100%;
   position: relative;
@@ -44,7 +43,7 @@ header nav ul li {
 }
 
 footer {
-  background-color: #0B2F47;
+  background-color: #0b2f47;
   color: #ffffff;
   font-size: 16px;
   position: relative;
@@ -70,21 +69,72 @@ footer {
 
 /* Fahrzeug hinzufügen / bearbeiten */
 
-#fahrzeughinzufügen{
-  display: flex;
+.grid-container {
+  padding-top: 40px;
+  display: grid;
   justify-content: center;
+  grid-template-columns: 300px 300px;
+  grid-template-rows: 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px;
+  row-gap: 15px;
+  padding-bottom: 40px;
+}
+
+.grid-container p {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+#seitenName {
+  display: flex;
   align-items: center;
+  justify-content: center;
+  margin-left: 40px;
+  margin-right: 40px;
+  background-color: #224e6b;
+  grid-column: 1 / span 2;
 }
 
-.seitenName{
-  background-color: #224E6B;
-  margin-top: 20px;
-  width: 500px;
-  text-align: center;
+.attribut {
+  display: flex;
+  align-items: center;
+  background-color: #224e6b;
+  align-items: center;
+  justify-content: center;
 }
 
-.seitenName h1{
-  font-size: 40px	;
-  text-decoration: none;
-  font-weight: normal;
+.attribut-eingabe {
+  background-color: #ffffff;
+}
+
+#foto-upload {
+  grid-column: 1 / span 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #224e6b;
+}
+
+#foto-upload p {
+  margin-right: 40px;
+}
+
+#speichern {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-column: 1 / span 2;
+  display: flex;
+  align-items: center;
+  background-color: #224e6b;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.attribut-eingabe {
+  display: grid;
+  width: 100%;
+}
+
+.dropdown img {
+  float: right;
 }

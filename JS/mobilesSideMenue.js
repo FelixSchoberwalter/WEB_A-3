@@ -1,9 +1,11 @@
-var navLinks = document.getElementById("navLinks");
 
-function showMenu() {
-  navLinks.style.right = "0px";
-}
+  function menue() {
+  
+  var sideMenue = document.getElementById("sideMenue")
 
-function hideMenu() {
-  navLinks.style.right = "-200px";
+  if (sideMenue.style.display == "none") {
+    sideMenue.style.display = "initial"
+  } else {
+    sideMenue.style.display = "none"
+  }
 }

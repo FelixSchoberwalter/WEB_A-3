@@ -11,9 +11,13 @@
 
 /* Main / Allgemeines */
 
-a {
-  text-decoration: none;
-  color: #ffffff;
+p {
+  font-size: 16px;
+}
+
+h1 {
+  font-size: 32px;
+  font-weight: bold;
 }
 
 h2 {
@@ -21,16 +25,29 @@ h2 {
   font-weight: normal;
 }
 
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
 main {
   background-color: #318cb8;
   color: #ffffff;
   height: 100%;
   width: 100%;
+  min-height: 100vh;
 }
 
 /* Header / Footer*/
+
+#logo img{
+  width: 90%;
+  height: auto;
+}
+
 header {
-  background-color: #0B2F47;
+  background-color: #0b2f47;
+  max-height: 120px;
   min-height: 120px;
   width: 100%;
   position: relative;
@@ -43,17 +60,16 @@ header nav ul li {
   margin-right: 10px;
 }
 
-header nav ul li:last-child{
+header nav ul li:last-child {
   float: right;
   margin-top: 50px;
   margin-right: 5%;
   text-align: center;
 }
 
-
-#dropwdown-menü{
+#dropdown-menü {
   float: right;
-  display:none;
+  display: none;
 }
 
 footer {
@@ -70,7 +86,7 @@ footer {
 .rechtliches {
   position: relative;
   margin-top: 10px;
-  margin-left: 225px;
+  margin-left: 200px;
   float: left;
 }
 
@@ -78,54 +94,76 @@ footer {
   position: relative;
   margin-top: 10px;
   display: block;
-  margin-right: 225px;
+  margin-right: 200px;
   float: right;
 }
 
-/* Header / Footer für mobil */ 
-
-@media only screen and (max-width: 700px){
-
-  .rechtliches {
-      position: relative;
-      display: block;
-      margin-top: 10px;
-      margin-left: 50px;
-      float: left;
-      
-    }
-
-    .kontakt {
-      position: relative;
-      margin-top: 10px;
-      margin-right: 50px;
-      float: right;
-  
-    }
-
-
-  
-    
-   
-    header nav li:not(li:first-child) {
-      
-      display: none;
-
-
-    }
-
-
-    #dropwdown-menü{
-        display: block;
-        float: right;
-        margin-top: -95px;
-        margin-right: 50px;
-        font-size: 40px;
-    }
-
+#sideMenue {
+  display: none;
 }
 
+#sideMenueNav{
+  display: none;
+}
 
+/* Header / Footer für mobil */
+
+@media(max-width: 700px) {
+
+  #logo img{
+      width: 70%;
+      height: auto;
+  }
+
+  .rechtliches {
+    position: relative;
+    display: block;
+    margin-top: 10px;
+    margin-left: 50px;
+    float: left;
+  }
+
+  .kontakt {
+    position: relative;
+    margin-top: 10px;
+    margin-right: 50px;
+    float: right;
+  }
+
+  header nav li:not(li:first-child) {
+    display: none;
+  }
+
+  #dropdown-menü {
+    display: flex;
+    float: right;
+    margin-top: -75px;
+    margin-right: 50px;
+    font-size: 40px;
+    color: #ffffff;
+  }
+
+  #sideMenue {
+    margin-top: 19px;
+    display: initial;
+    background-color: #224e6b;
+    width: 240px;
+    float: right;
+    list-style: none;
+    min-height: 100vh;
+    /* todo */
+  }
+
+  #sideMenue ul li {
+    list-style: none;
+    padding-left: 30px;
+    padding-top: 30px;
+  }
+
+  #sideMenueNav {
+    display: initial;
+  }
+}
 
 /* Fahrzeug hinzufügen / bearbeiten */
 
@@ -198,3 +236,9 @@ footer {
 .dropdown img {
   float: right;
 }
+
+@media(max-width: 700px) {
+
+}
+
+

@@ -1,6 +1,6 @@
 @font-face {
   font-family: robotoRegular;
-  src: url(Roboto-Regular.ttf);
+  src: url(/Media/Roboto-Regular.ttf);
 }
 
 * {
@@ -43,10 +43,6 @@ header nav ul li {
   vertical-align: middle;
 }
 
-#logo {
-    size: 1cm;
-}
-
 footer {
   background-color: #0B2F47;
   color: #ffffff;
@@ -70,4 +66,25 @@ footer {
   display: block;
   margin-left: 1500px;
   float: right;
+}
+
+/* Fahrzeug hinzufügen / bearbeiten */
+
+#fahrzeughinzufügen{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.seitenName{
+  background-color: #224E6B;
+  margin-top: 20px;
+  width: 500px;
+  text-align: center;
+}
+
+.seitenName h1{
+  font-size: 40px	;
+  text-decoration: none;
+  font-weight: normal;
 }

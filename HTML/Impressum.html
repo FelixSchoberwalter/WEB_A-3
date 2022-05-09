@@ -2,8 +2,9 @@
 <html>
   <head>
     <title>Impressum</title>
-    <meta name="viewport" content="with=device-width, intital-scale=1.0" />
+    <meta name="viewport" content="width=device-width, intital-scale=1.0, minimum-scale=1" />
     <link rel="stylesheet" href="/CSS/styles.css" />
+	<script src="/JS/mobilesSideMenue.js"></script>
     <script src="https://kit.fontawesome.com/0d52a32f2f.js" crossorigin="anonymous"></script>
     <meta lang="de" />
     <meta charset="utf-8" />
@@ -11,27 +12,41 @@
 
   <body>
     <header>
-      <nav>
-        <ul>
-          <li>
-            <a href="/Index.html">
-              <img id="logo" src="/Media/logo.png" alt="Firmenlogo" />
-            </a>
-          </li>
-          <li id="homebutton"><a href="/Index.html"> Home </a></li>
-          <li id="überunsbutton"><a href="/ÜberUns.html"> &Uuml;ber uns</a></li>
-          <li id="fahrzeughinzufügenbutton">
-            <a href="/FahrzeugHinzufügen.html">
-              Fahrzeug <br />
-              hinzuf&uuml;gen
-            </a>
-          </li>
-        </ul>
-      </nav>
-
-    <a id = "dropwdown-menü" href="#">
-      <i class="fa-solid fa-bars"></i>
-    </a>
+      
+		<nav>
+			<ul>
+			  <li>
+				<a id="logo" href="/Index.html">
+				  <img src="/Media/logo.png" alt="Firmenlogo" />
+				</a>
+			  </li>
+			  <li><a href="/Index.html"> Home </a></li>
+			  <li><a href="/ÜberUns.html"> &Uuml;ber uns</a></li>
+			  <li>
+				<a href="/FahrzeugHinzufügen.html">
+				  Fahrzeug <br />
+				  hinzuf&uuml;gen
+				</a>
+			  </li>
+			</ul>
+		  </nav>
+	
+		<div id="dropdown-menü" onclick="menue()">
+		  <i class="fa-solid fa-bars"></i>
+		</div>
+	
+		<div id="sideMenue">
+		  <ul id="sideMenueNav">
+			<li><a href="/Index.html"> Home </a></li>
+			<li><a href="/ÜberUns.html"> &Uuml;ber uns</a></li>
+			<li>
+			  <a href="/FahrzeugHinzufügen.html">
+				Fahrzeug <br>hinzuf&uuml;gen
+			  </a>
+			</li>
+		</div>
+		
+   
     
 
     </header>
@@ -49,7 +64,7 @@
 		Jascha Graus <br>
 		Serhat G&ouml;l <br>
 		Victor C&ouml;lsch <br>
-		Johannes Schn&ouml;lrr <br>
+		Johannes Schn&ouml;rr <br>
 		Kai-Niklas Dippold <br>
 		Umsatzsteuer-ID: <br>
 		Umsatzsteuer-Identifikationsnummer gem&auml;&szlig; &sect;27a Umsatzsteuergesetz: 01010101 <br>
@@ -78,25 +93,24 @@
 
 	<footer>
 		
-		<div class = rechtliches>
-		
-		<h2> Rechtliches </h2>
-
-		<a href= "/HTML/Impressum.html"> Impressum </a> <br>
-		<a href= "/HTML/AGB.html"> AGB </a> <br>
-		<a href= "/HTML/Datenschutz.html"> Datenschutz </a> <br>
-
-		</div>
-
-		<div class = kontakt>
-
-		<h2> Kontakt </h2>
-
-		<p> DE, 68199 Mannheim, <br> Gewerbestr. 7 <br> info@Carbase.de <br> +49 178 - 313097483
-		</p>
-
-		</div>
-
+		<div class="rechtliches">
+			<h2>Rechtliches</h2>
+	
+			<a href="/Impressum.html"> Impressum </a> <br />
+			<a href="/AGB.html"> AGB </a> <br />
+			<a href="/Datenschutz.html"> Datenschutz </a> <br />
+		  </div>
+	
+		  <div class="kontakt">
+			<h2>Kontakt</h2>
+	
+			<p>
+			  DE, 68199 Mannheim, <br />
+			  Gewerbestr. 7 <br />
+			  info@Carbase.de <br />
+			  +49 178 - 313097483
+			</p>
+		  </div>
 
 	</footer>
 

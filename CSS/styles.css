@@ -144,6 +144,8 @@ footer {
   }
 
   #sideMenue {
+    position: absolute;
+    right: 0;
     margin-top: 19px;
     display: initial;
     background-color: #224e6b;

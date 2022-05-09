@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="de">
   <head>
-    <title>Template</title>
+    <title>Carbase Datenschutz</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
     <link rel="stylesheet" href="/CSS/styles.css" />
     <script src="/JS/mobilesSideMenue.js"></script>
@@ -14,24 +14,37 @@
       <nav>
         <ul>
           <li>
-            <a href="/Index.html">
-              <img id="logo" src="/Media/logo.png" alt="Firmenlogo" />
-            </a>
+          <a id="logo" href="/HTML/Index.html">
+            <img src="/Media/logo.png" alt="Firmenlogo" />
+          </a>
           </li>
-          <li id="homebutton"><a href="/Index.html"> Home </a></li>
-          <li id="überunsbutton"><a href="/ÜberUns.html"> &Uuml;ber uns</a></li>
-          <li id="fahrzeughinzufügenbutton">
-            <a href="/FahrzeugHinzufügen.html">
-              Fahrzeug <br />
-              hinzuf&uuml;gen
-            </a>
+          <li><a href="/HTML/Index.html"> Home </a></li>
+          <li><a href="/HTML/Über_uns.html"> &Uuml;ber uns</a></li>
+          <li>
+          <a href="/HTML/Fahrzeug_Hinzufügen.html">
+            Fahrzeug <br />
+            hinzuf&uuml;gen
+          </a>
           </li>
         </ul>
-      </nav>
-
-    <a id = "dropwdown-menü" href="#">
-      <i class="fa-solid fa-bars"></i>
-    </a>
+        </nav>
+    
+      <div id="dropdown-menü" onclick="menue()">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    
+      <div id="sideMenue">
+        <ul id="sideMenueNav">
+        <li><a href="/HTML/Index.html"> Home </a></li>
+        <li><a href="/HTML/Über_uns.html"> &Uuml;ber uns</a></li>
+        <li>
+          <a href="/HTML/FahrzeugHinzufügen.html">
+          Fahrzeug <br>hinzuf&uuml;gen
+          </a>
+        </li>
+      </div>
+      
+     
     
 
     </header>
@@ -65,22 +78,22 @@
     <footer>
       <div class="rechtliches">
         <h2>Rechtliches</h2>
-
+    
         <a href="/HTML/Impressum.html"> Impressum </a> <br />
         <a href="/HTML/AGB.html"> AGB </a> <br />
         <a href="/HTML/Datenschutz.html"> Datenschutz </a> <br />
-      </div>
-
-      <div class="kontakt">
+        </div>
+    
+        <div class="kontakt">
         <h2>Kontakt</h2>
-
+    
         <p>
           DE, 68199 Mannheim, <br />
           Gewerbestr. 7 <br />
           info@Carbase.de <br />
           +49 178 - 313097483
         </p>
-      </div>
+        </div>
     </footer>
   </body>
 </html>

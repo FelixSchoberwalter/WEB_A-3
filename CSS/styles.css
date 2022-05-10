@@ -240,6 +240,28 @@ footer {
 }
 
 @media(max-width: 700px) {
+  #seitenName{
+    display:block;
+    font-size: 24;
+    margin-bottom: 10px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .grid-container {
+    display: block;
+    justify-content: center;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  #foto-upload p{
+    margin-right: 0px;
+  }
+
+  #speichern {
+    margin-top: 10px;
+  }
+
 
 }
 

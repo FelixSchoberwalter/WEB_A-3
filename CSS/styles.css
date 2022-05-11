@@ -244,8 +244,6 @@ footer {
     display:block;
     font-size: 24;
     margin-bottom: 10px;
-    padding-left: 0px;
-    padding-right: 0px;
   }
   .grid-container {
     display: block;
@@ -261,7 +259,9 @@ footer {
   #speichern {
     margin-top: 10px;
   }
-
+  .grid-container p{
+    font-size: 20px;
+  }
 
 }
 

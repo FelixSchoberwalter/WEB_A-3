@@ -30,10 +30,10 @@
         </ul>
         </nav>
     
-      <div id="dropdown-menü" onclick="menue()">
+      <div id="dropdown-menü" onclick="menue('mainFahrzeugHinzufuegen')">
         <i class="fa-solid fa-bars"></i>
       </div>
-    
+
       <div id="sideMenue">
         <ul id="sideMenueNav">
         <li><a href="../HTML/Index.html"> Home </a></li>
@@ -43,15 +43,18 @@
           Fahrzeug <br>hinzuf&uuml;gen
           </a>
         </li>
+        </ul>
       </div>
-      
-     
-
+  
     </header>
 
 	</header>
 
-    <main>
+    <main id="mainFahrzeugHinzufuegen">
+
+
+
+      <form>
       <div class="grid-container">
         <div id="seitenName">
           <h1>Fahrzeug&nbsp;Hinzufügen</h1>
@@ -85,11 +88,11 @@
           <input type="text" />
         </div>
         <div class="attribut">
-          <p>Karftstoff:</p>
+          <p>Kraftstoff:</p>
         </div>
         <div class="attribut-eingabe">
           <select class="dropdown-fahrzeug">
-            <option>- Bitte wählen -</option>
+            <option>-Bitte wählen-</option>
             <option>Diesel</option>
             <option>Benzin</option>
             <option>Elektro</option>
@@ -210,17 +213,14 @@
         </div>
         <div id="foto-upload">
 			<p>Foto Upload:</p>
-          <form action="/action_page.php">
-            <label for="img"></label>
             <input type="file" id="img" name="img" accept="image/*" />
-            <input type="submit" />
-          </form>
         </div>
         <div id="speichern">
 		<!-- TODO verlinkung-->
-          <a href="">SPEICHERN</p>
+          <button type="submit">SPEICHERN</button>
         </div>
       </div>
+    </form>
     </main>
 
     <footer>

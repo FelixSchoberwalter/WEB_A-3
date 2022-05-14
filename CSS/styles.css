@@ -303,6 +303,17 @@ footer {
 
 }
 
+/* Index */
+
+#autoTable th{
+  font-weight: normal;
+}
+
+#autoTable td{
+  color: black;
+}
+
+
 /* Datenschutz/Impressum/AGB */
 .text {
   padding: 20px 20px 0px 20px;

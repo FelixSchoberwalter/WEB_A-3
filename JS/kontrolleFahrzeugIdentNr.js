@@ -2,7 +2,7 @@ const formHinzufuegen = document.getElementById("hinzufuegen");
 const fahrgestellnummer = document.getElementById("fahrgestellnummer");
 const bezeichnung = document.getElementById("bezeichnung")
 
-const regExFahrgestellnummer = /[QIO\sa-z]+/;
+const regExFahrgestellnummer = /[QIO\sa-z!,%$&"/()=?.:;-_<>|]+/;
 
 formHinzufuegen.addEventListener("submit", (e)=> {
 

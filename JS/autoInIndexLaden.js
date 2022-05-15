@@ -8,7 +8,6 @@ var autosArray = [
         stellplatz: "D8",
         anmerkung: "-"
     },
-
     {
         fahrgestellnummer: "1B3LC46K68N629623",
         hersteller: "Skoda",
@@ -18,7 +17,6 @@ var autosArray = [
         stellplatz: "E9",
         anmerkung: "-"
     },
-
     {
         fahrgestellnummer: "SALNY22252A259131",
         hersteller: "VW",
@@ -28,7 +26,6 @@ var autosArray = [
         stellplatz: "G7",
         anmerkung: "BlueMotion"
     },
-
     {
         fahrgestellnummer:  "4T1BF30KX5U097715",
         hersteller: "Opel",
@@ -233,7 +230,7 @@ var autosArray = [
 
 function printAutos(){
  
-  autoTabelle = document.getElementById("autoTable");
+  autoTabelle = document.getElementById("autotable");
 
   for (var i = 1; i < autoTabelle.rows.length; i++){
      autoTabelle.rows[i].cells[0].innerHTML = autosArray[i-1].fahrgestellnummer;

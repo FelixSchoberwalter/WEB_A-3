@@ -262,6 +262,9 @@ footer {
   .grid-container p{
     font-size: 20px;
   }
+  .attribut{
+    margin-top: 10px;
+  }
 
 }
 

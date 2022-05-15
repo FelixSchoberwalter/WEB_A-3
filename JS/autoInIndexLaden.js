@@ -78,9 +78,6 @@ var autosArray = [
         stellplatz: "A5",
         anmerkung: "Cabrio"
     },
-
-
-
 ]
 
 function printAutos(){

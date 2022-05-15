@@ -63,36 +63,36 @@
           <p>Fahrgestellnummer:</p>
         </div>
         <div class="attribut-eingabe">
-          <input type="text" />
+          <input type="text" name="Fahrgestellnummer"/>
         </div>
         <div class="attribut">
           <p>Hersteller</p>
         </div>
         <div class="attribut-eingabe">
-          <select class="dropdown-fahrzeug">
-            <option>-Bitte wählen-</option>
-            <option>VW</option>
-            <option>Audi</option>
-            <option>BMW</option>
-            <option>Mercedes</option>
-            <option>Skoda</option>
-            <option>Opel</option>
-            <option>Fiat</option>
-            <option>Citroen</option>
+          <select class="dropdown-fahrzeug" name="Hersteller">
+            <option value="" selected disabled hidden>-Bitte wählen-</option>
+            <option value="1">VW</option>
+            <option value="2">Audi</option>
+            <option value="3">BMW</option>
+            <option value="4">Mercedes</option>
+            <option value="5">Skoda</option>
+            <option value="6">Opel</option>
+            <option value="7">Fiat</option>
+            <option value="8">Citroen</option>
           </select>
         </div>
         <div class="attribut">
           <p>Bezeichnung:</p>
         </div>
         <div class="attribut-eingabe">
-          <input type="text" />
+          <input type="text" name="Bezeichnung" />
         </div>
         <div class="attribut">
           <p>Kraftstoff:</p>
         </div>
         <div class="attribut-eingabe">
-          <select class="dropdown-fahrzeug">
-            <option>-Bitte wählen-</option>
+          <select class="dropdown-fahrzeug" name="Kraftstoff">
+            <option value="" selected disabled hidden>-Bitte wählen-</option>
             <option>Diesel</option>
             <option>Benzin</option>
             <option>Elektro</option>
@@ -103,8 +103,8 @@
           <p>Farbe:</p>
         </div>
         <div class="attribut-eingabe">
-          <select class="dropdown-fahrzeug">
-            <option>-Bitte wählen-</option>
+          <select class="dropdown-fahrzeug" name="Farbe">
+            <option value="" selected disabled hidden>-Bitte wählen-</option>
             <option>Schwarz</option>
             <option>Weiß</option>
             <option>Dunkelgrau</option>
@@ -131,8 +131,8 @@
           <p>Stellplatz:</p>
         </div>
         <div class="attribut-eingabe">
-          <select class="dropdown-fahrzeug">
-			<option>-Bitte wählen-</option>
+          <select class="dropdown-fahrzeug" name="Stellplatz">
+			<option value="" selected disabled hidden>-Bitte wählen-</option>
       <option>A1</option>
       <option>A2</option>
       <option>A3</option>
@@ -209,15 +209,17 @@
           <p>Anmerkung:</p>
         </div>
         <div class="attribut-eingabe">
-          <input type="text" />
+          <input type="text" name="Anmerkung"/>
         </div>
         <div id="foto-upload">
-			<p>Foto Upload:</p>
-            <input type="file" id="img" name="img" accept="image/*" />
+          <label id="foto-upload-Btn">
+            <input type="file" id="foto-upload-Btn" name="foto-upload" accept="image/*"/>
+            foto-upload
+          </label>
         </div>
         <div id="speichern">
 		<!-- TODO verlinkung-->
-          <button type="submit">SPEICHERN</button>
+          <button type="submit" name="Speichern" id="submitSpeichernBtn">SPEICHERN</button>
         </div>
       </div>
     </form>

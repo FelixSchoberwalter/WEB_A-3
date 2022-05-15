@@ -97,7 +97,7 @@ function printAutos(){
 
 function printIcons(){
 
-    autoTabelle = document.getElementById("autoTable");
+    autoTabelle = document.getElementById("autotable");
 
     for (var i = 1; i < autoTabelle.rows.length; i++){
 

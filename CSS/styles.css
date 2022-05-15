@@ -150,7 +150,7 @@ footer {
     right: 0;
     top: 0;
     height: 500px;
-    /* todo */
+
   }
 
   #sideMenue ul li {
@@ -342,16 +342,57 @@ input[type="file"] {
 
 /* Index */
 
+#suche{
+  padding-top: 50px;
+  display: flex;
+}
+
+
+
 #autoTable th{
   font-weight: normal;
 }
 #autoTable td{
   color: black;
 }
-.table-center{
-  width:1250px;
+
+#tabelleAutos{
+  width:80%;
   height:100px ; 
   margin:auto;
+  border: 2px solid black;
+}
+
+table{
+  border: 2px solid black;
+  border-collapse: collapse;
+}
+
+table td{
+  text-align: center;
+  height: 40px;
+  color: black;
+  min-width: 40px;
+  border-collapse: collapse;
+  background-color: #ffffff;
+  border: 2px solid black;
+  font-size:16px
+}
+
+table th{
+  border-collapse: collapse;
+  background-color: #224E6B;
+  border: 2px solid black;
+  min-width: 40px;
+  height: 50px;
+  font-size:16px
+}
+
+#tabelleSuchen{
+  width:60%;
+  height:100px ; 
+  margin-left: 10%;
+  margin-bottom: 25px;
 }
  
 #autoTable td:nth-child(8)
@@ -367,6 +408,32 @@ input[type="file"] {
   text-align: center;
   font-size: 40px;
 }
+
+#suchenButton{
+  float: right;
+  width: 200px;
+  height: 98px;
+  background-color: #224E6B;
+  font-size: 26px;
+  color: white;
+  margin-left: 70px;
+  border: 2px solid black;
+}
+
+.eingabeSuche{
+  width: 100%;
+  height: 100%;
+  border-style: none;
+}
+
+select {
+  border:none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+
 
 /* Datenschutz/Impressum/AGB */
 .text {

@@ -2,8 +2,8 @@ function eingabesimulator(){
     var hersteller = document.getElementById("suchfeldHersteller");
     var kraftstoff = document.getElementById("suchfeldKraftstoff");
 
-    hersteller.value = "Penis";
-    kraftstoff.value = "Prothese";
+    hersteller.value = "BWM";
+    kraftstoff.value = "Elektro";
 
     setTimeout(function() {
         window.location.replace("beispielsuche.html");

@@ -111,10 +111,6 @@ footer {
 
 @media(max-width: 700px) {
 
-  #logo img{
-      width: 70%;
-      height: auto;
-  }
 
   .rechtliches {
     position: relative;
@@ -349,7 +345,6 @@ input[type="file"] {
 #autoTable th{
   font-weight: normal;
 }
-
 #autoTable td{
   color: black;
 }
@@ -358,19 +353,16 @@ input[type="file"] {
   height:100px ; 
   margin:auto;
 }
-
  
 #autoTable td:nth-child(8)
 {
   text-align: center;
   font-size: 40px;
 }
-
 #autoTable td:nth-child(9){
   text-align: center;
   font-size: 40px;
 }
-
 #autoTable td:nth-child(10){
   text-align: center;
   font-size: 40px;

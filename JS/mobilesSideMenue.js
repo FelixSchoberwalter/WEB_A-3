@@ -1,7 +1,6 @@
 
   function menue(parameter) {
   
-
   var sideMenue = document.getElementById("sideMenue")
   var mainHeight = document.getElementById(parameter).offsetHeight;
 

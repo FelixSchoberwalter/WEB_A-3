@@ -10,39 +10,38 @@
     </head>
     <body>
         <header>
-
             <nav>
                 <ul>
-                  <li>
-                    <a id="logo" href="../HTML/Index.html">
-                      <img src="../Media/logo.png" alt="Firmenlogo" />
-                    </a>
-                  </li>
-                  <li><a href="../HTML/Index.html"> Home </a></li>
-                  <li><a href="../HTML/Über_uns.html"> &Uuml;ber uns</a></li>
-                  <li>
-                    <a href="../HTML/Fahrzeug_Hinzufuegen.html">
-                      Fahrzeug <br />
-                      hinzuf&uuml;gen
-                    </a>
-                  </li>
+                    <li>
+                        <a id="logo" href="../HTML/Index.html">
+                            <img src="../Media/logo.png" alt="Firmenlogo" />
+                        </a>
+                    </li>
+                    <li><a href="../HTML/Index.html"> Home </a></li>
+                    <li><a href="../HTML/Über_uns.html"> &Uuml;ber uns</a></li>
+                    <li>
+                        <a href="../HTML/Fahrzeug_Hinzufuegen.html">
+                        Fahrzeug <br />
+                        hinzuf&uuml;gen
+                        </a>
+                    </li>
                 </ul>
-              </nav>
+            </nav>
         
             <div id="dropdown-menü" onclick="menue('mainIndex')">
               <i class="fa-solid fa-bars" ></i>
             </div>
         
             <div id="sideMenue">
-              <ul id="sideMenueNav">
-                <li><a href="../HTML/Index.html"> Home </a></li>
-                <li><a href="../HTML/Über_uns.html"> &Uuml;ber uns</a></li>
-                <li>
-                  <a href="../HTML/Fahrzeug_Hinzufuegen.html">
-                    Fahrzeug <br>hinzuf&uuml;gen
-                  </a>
-                </li>
-              </ul>
+                <ul id="sideMenueNav">
+                    <li><a href="../HTML/Index.html"> Home </a></li>
+                    <li><a href="../HTML/Über_uns.html"> &Uuml;ber uns</a></li>
+                    <li>
+                        <a href="../HTML/Fahrzeug_Hinzufuegen.html">
+                            Fahrzeug <br>hinzuf&uuml;gen
+                        </a>
+                    </li>
+                </ul>
             </div>
             
        
@@ -53,19 +52,17 @@
 
         <main id="mainIndex">
             <div>
-                <form action="beispielsuche.html">
-                    <input id="" type="text" placeholder="Fahrgestellnummer">
-                    <input type="text" placeholder="Hersteller">
-                    <input type="text" placeholder="Bezeichnung">
-                    <input type="text" placeholder="Kraftstoff">
-                    <input type="text" placeholder="Farbe">
-                    <input type="text" placeholder="Stellplatz">
+                <input type="text" placeholder="Fahrgestellnummer">
+                <input id="suchfeldHersteller" type="text" placeholder="Hersteller">
+                <input type="text" placeholder="Bezeichnung">
+                <input id="suchfeldKraftstoff" type="text" placeholder="Kraftstoff">
+                <input type="text" placeholder="Farbe">
+                <input type="text" placeholder="Stellplatz">
 
-                    <input type="submit">
-                </form>
+                <input onclick="eingabesimulator()" type="submit">
             </div>
 
-            <table id="autotable" class="table-center" style="border: 1px solid #000000" >
+            <table id="autotable" class="table-center" >
                 <tr>
                     <th>Fahrgestellnummer</th>
                     <th>Hersteller</th>
@@ -197,24 +194,22 @@
                 <a href="../HTML/Impressum.html"> Impressum </a> <br />
                 <a href="../HTML/AGB.html"> AGB </a> <br />
                 <a href="../HTML/Datenschutz.html"> Datenschutz </a> <br />
-              </div>
+            </div>
         
-              <div class="kontakt">
+            <div class="kontakt">
                 <h2>Kontakt</h2>
-        
+
                 <p>
                   DE, 68199 Mannheim, <br />
                   Gewerbestr. 7 <br />
                   info@Carbase.de <br />
                   +49 178 - 313097483
                 </p>
-              </div>
+            </div>
 
         </footer>
 
         <script src="../JS/autoInIndexLaden.js"></script>
-        <script>
-
-        </script>
+        <script src="../JS/beispielsuche.js"></script>
     </body>
     </html>

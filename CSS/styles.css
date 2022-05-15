@@ -5,9 +5,10 @@
 
 * {
   font-family: robotoRegular;
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
 }
+
 
 /* Main / Allgemeines */
 
@@ -33,9 +34,8 @@ a {
 main {
   background-color: #318cb8;
   color: #ffffff;
-  height: 100%;
   width: 100%;
-  min-height: 100vh;
+  min-height: 73vh;
 }
 
 /* Header / Footer*/
@@ -81,6 +81,7 @@ footer {
   bottom: 0;
   min-height: 120px;
   width: 100%;
+  margin-bottom: -6px;
 }
 
 .rechtliches {
@@ -145,14 +146,14 @@ footer {
 
   #sideMenue {
     position: absolute;
-    right: 0;
-    margin-top: 19px;
-    display: initial;
+    display: none;
     background-color: #224e6b;
     width: 240px;
-    float: right;
     list-style: none;
-    min-height: 100vh;
+    margin-top: 120px;
+    right: 0;
+    top: 0;
+    height: 500px;
     /* todo */
   }
 
@@ -164,6 +165,43 @@ footer {
 
   #sideMenueNav {
     display: initial;
+  }
+}
+
+
+
+@media(max-width: 380px){
+
+  .rechtliches {
+    position: relative;
+    display: block;
+    margin-top: 10px;
+    margin-left: 10px;
+    float: left;
+  }
+
+  .kontakt {
+    position: relative;
+    margin-top: 10px;
+    margin-right: 10px;
+    float: right; 
+  }
+}
+
+@media(max-width: 300px){
+
+  .rechtliches {
+    position: relative;
+    float: left;
+    margin-left: 25%;
+  }
+
+  .kontakt {
+    position: relative;
+    float: left;
+    margin-left: 25%
+    
+    
   }
 }
 
@@ -268,9 +306,20 @@ footer {
 
 }
 
+/* Index */
+
+#autoTable th{
+  font-weight: normal;
+}
+
+#autoTable td{
+  color: black;
+}
+
+
 /* Datenschutz/Impressum/AGB */
 .text {
-  padding: 20px 20px 0px 20px;
+  padding: 20px 20px 20px 20px;
 }
 hr {
   border: dashed #fff;

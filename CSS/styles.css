@@ -318,6 +318,11 @@ footer {
 #autoTable td{
   color: black;
 }
+.table-center{
+  width:1250px;
+  height:100px ; 
+  margin:auto;
+}
 
 
 /* Datenschutz/Impressum/AGB */

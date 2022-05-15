@@ -35,7 +35,7 @@ main {
   background-color: #318cb8;
   color: #ffffff;
   width: 100%;
-  min-height: 73vh;
+  min-height: 82vh;
 }
 
 /* Header / Footer*/
@@ -299,6 +299,12 @@ footer {
   }
   .grid-container p{
     font-size: 20px;
+  }
+  .attribut{
+    margin-top: 10px;
+  }
+  #foto-upload{
+    margin-top: 10px;
   }
 
 }

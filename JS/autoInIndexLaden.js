@@ -78,9 +78,6 @@ var autosArray = [
         stellplatz: "A5",
         anmerkung: "Cabrio"
     },
-
-
-
 ]
 
 function printAutos(){
@@ -97,6 +94,22 @@ function printAutos(){
      autoTabelle.rows[i].cells[6].innerHTML = autosArray[i-1].anmerkung;
   }     
 }
+
+function printIcons(){
+
+    autoTabelle = document.getElementById("autoTable");
+
+    for (var i = 1; i < autoTabelle.rows.length; i++){
+
+        autoTabelle.rows[i].cells[7].innerHTML = '<i class="fa-regular fa-image"></i>'; 
+        autoTabelle.rows[i].cells[8].innerHTML = '<i class="fa-solid fa-pencil"></i>';
+        autoTabelle.rows[i].cells[9].innerHTML = '<i class="fa-regular fa-trash-can"></i>';
+
+    }
+
+}
+
+printIcons();
 
 printAutos();
 

@@ -347,15 +347,6 @@ input[type="file"] {
   display: flex;
 }
 
-
-
-#autoTable th{
-  font-weight: normal;
-}
-#autoTable td{
-  color: black;
-}
-
 #tabelleAutos{
   width:80%;
   height:100px ; 
@@ -379,6 +370,7 @@ table td{
   font-size:16px
 }
 
+
 table th{
   border-collapse: collapse;
   background-color: #224E6B;
@@ -395,16 +387,16 @@ table th{
   margin-bottom: 25px;
 }
  
-#autoTable td:nth-child(8)
+#tabelleAutos td:nth-child(8)
 {
   text-align: center;
   font-size: 40px;
 }
-#autoTable td:nth-child(9){
+#tabelleAutos td:nth-child(9){
   text-align: center;
   font-size: 40px;
 }
-#autoTable td:nth-child(10){
+#tabelleAutos td:nth-child(10){
   text-align: center;
   font-size: 40px;
 }

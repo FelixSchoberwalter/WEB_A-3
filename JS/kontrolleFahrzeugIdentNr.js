@@ -6,10 +6,13 @@ const regExFahrgestellnummer = /[QIO\sa-z!,%$&"/()=?.:;-_<>|]+/;
 
 formHinzufuegen.addEventListener("submit", (e)=> {
 
-    if(validiereFahrgestellnummer().length > 0){
+    let fehlermeldungen = validiereFahrgestellnummer();
+
+    if(fehlermeldungen.length > 0){
         e.preventDefault();
-        alert(validiereFahrgestellnummer().join("\n\n"));
+        alert(fehlermeldungen.join("\n\n"));
     }
+    //kein alert sondern  div in fett rot direkt unter Speichern
 })
 
 function validiereFahrgestellnummer(){

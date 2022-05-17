@@ -76,155 +76,155 @@ var autosArray = [
         anmerkung: "Cabrio"
     },
 
-    // {
-    //     fahrgestellnummer: "6LKHM868HENY6KEP4",
-    //     hersteller: "Mercedes",
-    //     bezeichnung: "A-Klasse",
-    //     kraftstoff: "Benzin",
-    //     farbe: "Grau",
-    //     stellplatz: "A6",
-    //     anmerkung: "-"
-    // },
+    {
+        fahrgestellnummer: "6LKHM868HENY6KEP4",
+        hersteller: "Mercedes",
+        bezeichnung: "A-Klasse",
+        kraftstoff: "Benzin",
+        farbe: "Grau",
+        stellplatz: "A6",
+        anmerkung: "-"
+    },
 
-    // {
-    //     fahrgestellnummer: "1KEBA65K65ZA29250",
-    //     hersteller: "BMW",
-    //     bezeichnung: "330I",
-    //     kraftstoff: "Elektro",
-    //     farbe: "Gelb",
-    //     stellplatz: "F3",
-    //     anmerkung: "-"
-    // },
+    {
+        fahrgestellnummer: "1KEBA65K65ZA29250",
+        hersteller: "BMW",
+        bezeichnung: "330I",
+        kraftstoff: "Elektro",
+        farbe: "Gelb",
+        stellplatz: "F3",
+        anmerkung: "-"
+    },
 
-    // {
-    //     fahrgestellnummer: "1FMZU65K63ZA29250",
-    //     hersteller: "BMW",
-    //     bezeichnung: "330I",
-    //     kraftstoff: "Elektro",
-    //     farbe: "Rot",
-    //     stellplatz: "F4",
-    //     anmerkung: "-"
-    // },
+    {
+        fahrgestellnummer: "1FMZU65K63ZA29250",
+        hersteller: "BMW",
+        bezeichnung: "330I",
+        kraftstoff: "Elektro",
+        farbe: "Rot",
+        stellplatz: "F4",
+        anmerkung: "-"
+    },
 
-    // {
-    //     fahrgestellnummer: "2FMZU65L84ZA29250",
-    //     hersteller: "BMW",
-    //     bezeichnung: "330I",
-    //     kraftstoff: "Elektro",
-    //     farbe: "Blau",
-    //     stellplatz: "F5",
-    //     anmerkung: "-"
-    // },
+    {
+        fahrgestellnummer: "2FMZU65L84ZA29250",
+        hersteller: "BMW",
+        bezeichnung: "330I",
+        kraftstoff: "Elektro",
+        farbe: "Blau",
+        stellplatz: "F5",
+        anmerkung: "-"
+    },
 
-    // {
-    //     fahrgestellnummer: "3PEUA5K45CJ29250",
-    //     hersteller: "BMW",
-    //     bezeichnung: "330I",
-    //     kraftstoff: "Elektro",
-    //     farbe: "Weiss",
-    //     stellplatz: "F6",
-    //     anmerkung: "-"
-    // },
+    {
+        fahrgestellnummer: "3PEUA5K45CJ29250",
+        hersteller: "BMW",
+        bezeichnung: "330I",
+        kraftstoff: "Elektro",
+        farbe: "Weiss",
+        stellplatz: "F6",
+        anmerkung: "-"
+    },
 
-    // {
-    //     fahrgestellnummer: "2LMDJ8JKXEBL18582",
-    //     hersteller: "BMW",
-    //     bezeichnung: "750LI",
-    //     kraftstoff: "Diesel",
-    //     farbe: "Schwarz",
-    //     stellplatz: "A4",
-    //     anmerkung: "-"
-    // },
+    {
+        fahrgestellnummer: "2LMDJ8JKXEBL18582",
+        hersteller: "BMW",
+        bezeichnung: "750LI",
+        kraftstoff: "Diesel",
+        farbe: "Schwarz",
+        stellplatz: "A4",
+        anmerkung: "-"
+    },
 
-    // {
-    //     fahrgestellnummer: "2LKAI8JKXEBL18582",
-    //     hersteller: "BMW",
-    //     bezeichnung: "750LI",
-    //     kraftstoff: "Diesel",
-    //     farbe: "Schwarz",
-    //     stellplatz: "A2",
-    //     anmerkung: "-"
-    // },
+    {
+        fahrgestellnummer: "2LKAI8JKXEBL18582",
+        hersteller: "BMW",
+        bezeichnung: "750LI",
+        kraftstoff: "Diesel",
+        farbe: "Schwarz",
+        stellplatz: "A2",
+        anmerkung: "-"
+    },
 
-    // {
-    //     fahrgestellnummer: "WVKAID1KZ5W192681",
-    //     hersteller: "VW",
-    //     bezeichnung: "Polo",
-    //     kraftstoff: "Benzin",
-    //     farbe: "Schwarz",
-    //     stellplatz: "D4",
-    //     anmerkung: "-"
-    // },
+    {
+        fahrgestellnummer: "WVKAID1KZ5W192681",
+        hersteller: "VW",
+        bezeichnung: "Polo",
+        kraftstoff: "Benzin",
+        farbe: "Schwarz",
+        stellplatz: "D4",
+        anmerkung: "-"
+    },
 
-    // {
-    //     fahrgestellnummer: "WKWAZY1KZ5Q192681",
-    //     hersteller: "VW",
-    //     bezeichnung: "Polo",
-    //     kraftstoff: "Benzin",
-    //     farbe: "Schwarz",
-    //     stellplatz: "D7",
-    //     anmerkung: "-"
-    // },
+    {
+        fahrgestellnummer: "WKWAZY1KZ5Q192681",
+        hersteller: "VW",
+        bezeichnung: "Polo",
+        kraftstoff: "Benzin",
+        farbe: "Schwarz",
+        stellplatz: "D7",
+        anmerkung: "-"
+    },
 
-    // {
-    //     fahrgestellnummer: "WAUEBW5UW5W192681",
-    //     hersteller: "VW",
-    //     bezeichnung: "Polo",
-    //     kraftstoff: "Benzin",
-    //     farbe: "Weiss",
-    //     stellplatz: "A8",
-    //     anmerkung: "-"
-    // },
+    {
+        fahrgestellnummer: "WAUEBW5UW5W192681",
+        hersteller: "VW",
+        bezeichnung: "Polo",
+        kraftstoff: "Benzin",
+        farbe: "Weiss",
+        stellplatz: "A8",
+        anmerkung: "-"
+    },
 
-    // {
-    //     fahrgestellnummer: "192681Z1KZ5W19268",
-    //     hersteller: "VW",
-    //     bezeichnung: "Polo",
-    //     kraftstoff: "Benzin",
-    //     farbe: "Schwarz",
-    //     stellplatz: "D2",
-    //     anmerkung: "-"
-    // },
+    {
+        fahrgestellnummer: "192681Z1KZ5W19268",
+        hersteller: "VW",
+        bezeichnung: "Polo",
+        kraftstoff: "Benzin",
+        farbe: "Schwarz",
+        stellplatz: "D2",
+        anmerkung: "-"
+    },
 
-    // {
-    //     fahrgestellnummer:  "SDJ63830KX5U09771",
-    //     hersteller: "Opel",
-    //     bezeichnung: "Corsa",
-    //     kraftstoff: "Diesel",
-    //     farbe: "Schwarz",
-    //     stellplatz: "A1",
-    //     anmerkung: "-"
-    // },
+    {
+        fahrgestellnummer:  "SDJ63830KX5U09771",
+        hersteller: "Opel",
+        bezeichnung: "Corsa",
+        kraftstoff: "Diesel",
+        farbe: "Schwarz",
+        stellplatz: "A1",
+        anmerkung: "-"
+    },
 
-    // {
-    //     fahrgestellnummer:  "SDJ63830NES463771",
-    //     hersteller: "Opel",
-    //     bezeichnung: "Corsa",
-    //     kraftstoff: "Diesel",
-    //     farbe: "Schwarz",
-    //     stellplatz: "A7",
-    //     anmerkung: "-"
-    // },
+    {
+        fahrgestellnummer:  "SDJ63830NES463771",
+        hersteller: "Opel",
+        bezeichnung: "Corsa",
+        kraftstoff: "Diesel",
+        farbe: "Schwarz",
+        stellplatz: "A7",
+        anmerkung: "-"
+    },
 
-    // {
-    //     fahrgestellnummer: "1B3AD46LE84KEN62",
-    //     hersteller: "Skoda",
-    //     bezeichnung: "Fabio Mont",
-    //     kraftstoff: "Hybrid",
-    //     farbe: "Rot",
-    //     stellplatz: "E7",
-    //     anmerkung: "-"
-    // },
+    {
+        fahrgestellnummer: "1B3AD46LE84KEN62",
+        hersteller: "Skoda",
+        bezeichnung: "Fabio Mont",
+        kraftstoff: "Hybrid",
+        farbe: "Rot",
+        stellplatz: "E7",
+        anmerkung: "-"
+    },
 
-    // {
-    //     fahrgestellnummer: "1B364KN7P8N62962",
-    //     hersteller: "Skoda",
-    //     bezeichnung: "Fabio Mont",
-    //     kraftstoff: "Hybrid",
-    //     farbe: "Orange",
-    //     stellplatz: "E9",
-    //     anmerkung: "-"
-    // },
+    {
+        fahrgestellnummer: "1B364KN7P8N62962",
+        hersteller: "Skoda",
+        bezeichnung: "Fabio Mont",
+        kraftstoff: "Hybrid",
+        farbe: "Orange",
+        stellplatz: "E9",
+        anmerkung: "-"
+    },
 ]
 
 function printAutos(){

@@ -196,8 +196,6 @@ footer {
     position: relative;
     float: left;
     margin-left: 25%
-    
-    
   }
 }
 
@@ -423,6 +421,9 @@ select {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  height: 100%;
+  width: 100%;
+  text-align: center;
 }
 
 

@@ -1,4 +1,4 @@
-const formHinzufuegen = document.getElementById("hinzufuegen");
+const submitButton = document.getElementById("submitSpeichernBtn");
 const fahrgestellnummer = document.getElementById("fahrgestellnummer");
 const bezeichnung = document.getElementById("bezeichnung");
 
@@ -6,7 +6,7 @@ const ausgabeFehlermeldungen = document.getElementById("fehlermeldungen");
 
 const regExFahrgestellnummer = /[QIO\sa-z!,%$&"/()=?.:;-_<>|]+/;
 
-formHinzufuegen.addEventListener("submit", (e)=> {
+submitButton.addEventListener('click', (e)=> {
 
     let fehlermeldungen = validiereFahrgestellnummer();
 

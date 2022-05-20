@@ -61,7 +61,7 @@
           <input type="text" name="Fahrgestellnummer" id="fahrgestellnummer" />
         </div>
         <div class="attribut">
-          <p>Hersteller</p>
+          <p>Hersteller:</p>
         </div>
         <div class="attribut-eingabe">
           <select class="dropdown-fahrzeug" name="Hersteller">
@@ -206,8 +206,11 @@
         <div class="attribut-eingabe">
           <input type="text" name="Anmerkung"/>
         </div>
-          <button type="file" id="foto-upload-Btn" name="foto-upload" accept="image/*">foto-upload ></button>
-          <button type="submit" name="Speichern" id="submitSpeichernBtn">SPEICHERN ></button>
+
+    <label for="foto-upload-Btn" class="foto-upload">FOTO UPLOAD ></label>
+    <input type="file" accept="image/*" id="foto-upload-Btn">
+    <button type="submit" name="Speichern" id="submitSpeichernBtn">SPEICHERN ></button>
+
           <div id="fehlermeldungen"></div>
       </div>
     </form>

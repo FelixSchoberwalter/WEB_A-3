@@ -42,9 +42,11 @@ button{
   box-shadow: 0 4px 2px -2px black;
   border-radius: 5px;
 }
-button:hover{
-
+.foto-upload{  
+  box-shadow: 0 4px 2px -2px black;
+  border-radius: 5px;
 }
+
 
 /* Header / Footer*/
 
@@ -248,24 +250,6 @@ footer {
   align-items: center;
 }
 
-#foto-upload {
-  grid-column: 1 / span 2;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #224e6b;
-}
-
-#speichern {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  grid-column: 1 / span 2;
-  display: flex;
-  align-items: center;
-  background-color: #224e6b;
-}
-
 .attribut-eingabe {
   display: grid;
   width: 100%;
@@ -286,7 +270,7 @@ footer {
   font-size: 32px;
 }
 
-#foto-upload-Btn{
+.foto-upload{
   grid-column: 1 / span 2;
   flex-grow: 1;
   margin: 0;
@@ -315,11 +299,9 @@ select.dropdown-fahrzeug {
 
   select.dropdown-fahrzeug {
     font-size: 20px;
-    text-align: left;
   }
   .grid-container input{
     font-size: 20px;
-    text-align: left;
   }
 
   #seitenName{
@@ -333,38 +315,26 @@ select.dropdown-fahrzeug {
     margin-left: 5px;
     margin-right: 5px;
   }
-
-  #foto-upload p{
-    margin-right: 0px;
-  }
-
-  #speichern {
-    margin-top: 10px;
-  }
   .grid-container p{
     font-size: 20px;
+
   }
   .attribut{
     margin-top: 10px;
   }
-  #foto-upload{
-    margin-top: 10px;
-    
-  }
+
 
   #submitSpeichernBtn{
+    margin-top: 10px;
     font-size: 24px;
   }
 
-  #foto-upload-Btn{
+  .foto-upload{
     font-size: 24px;
   }
 
   #fehlermeldungen {
     margin-top: 10px;
-  }
-  #foto-upload-Btn{
-    margin-top: 5px;
   }
 
 
@@ -462,6 +432,9 @@ select.dropdownSuche {
 /* Datenschutz/Impressum/AGB */
 .text {
   padding: 20px 20px 20px 20px;
+}
+.text h3{
+  font-weight: 500;
 }
 hr {
   border: dashed #fff;

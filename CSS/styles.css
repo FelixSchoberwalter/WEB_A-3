@@ -209,6 +209,12 @@ footer {
 
 /* Fahrzeug hinzufügen / bearbeiten */
 
+#fehlermeldungen{
+  color: red;
+  font-weight: 900;
+  grid-column: 1/span 2;
+}
+
 .grid-container {
   padding-top: 40px;
   display: grid;
@@ -222,6 +228,9 @@ footer {
 .grid-container p {
   font-size: 28px;
   font-weight: bold;
+}
+.grid-container input [type = "text"]{
+  font-size: 24px;
 }
 
 #seitenName {
@@ -237,10 +246,6 @@ footer {
   background-color: #224e6b;
   padding-left: 10px;
   align-items: center;
-}
-
-.attribut-eingabe {
-  background-color: #ffffff;
 }
 
 #foto-upload {
@@ -264,6 +269,7 @@ footer {
 .attribut-eingabe {
   display: grid;
   width: 100%;
+  background-color: #ffffff;
 }
 
 .dropdown img {
@@ -297,12 +303,23 @@ input[type="file"] {
 
 select.dropdown-fahrzeug {
   font-size: 24px;
+  text-align: center;
+}
+
+.grid-container input{
+  font-size: 24px;
+  text-align: center;
 }
 
 @media(max-width: 700px) {
 
   select.dropdown-fahrzeug {
     font-size: 20px;
+    text-align: left;
+  }
+  .grid-container input{
+    font-size: 20px;
+    text-align: left;
   }
 
   #seitenName{
@@ -342,6 +359,14 @@ select.dropdown-fahrzeug {
   #foto-upload-Btn{
     font-size: 24px;
   }
+
+  #fehlermeldungen {
+    margin-top: 10px;
+  }
+  #foto-upload-Btn{
+    margin-top: 5px;
+  }
+
 
 }
 

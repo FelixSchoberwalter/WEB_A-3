@@ -1,6 +1,8 @@
 const formHinzufuegen = document.getElementById("hinzufuegen");
 const fahrgestellnummer = document.getElementById("fahrgestellnummer");
-const bezeichnung = document.getElementById("bezeichnung")
+const bezeichnung = document.getElementById("bezeichnung");
+
+const ausgabeFehlermeldungen = document.getElementById("fehlermeldungen");
 
 const regExFahrgestellnummer = /[QIO\sa-z!,%$&"/()=?.:;-_<>|]+/;
 
@@ -10,9 +12,8 @@ formHinzufuegen.addEventListener("submit", (e)=> {
 
     if(fehlermeldungen.length > 0){
         e.preventDefault();
-        alert(fehlermeldungen.join("\n\n"));
+        ausgabeFehlermeldungen.innerText = fehlermeldungen.join("\n");
     }
-    //kein alert sondern  div in fett rot direkt unter Speichern
 })
 
 function validiereFahrgestellnummer(){

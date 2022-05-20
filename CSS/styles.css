@@ -43,7 +43,7 @@ button{
   border-radius: 5px;
 }
 button:hover{
-
+  cursor: hand;
 }
 
 /* Header / Footer*/

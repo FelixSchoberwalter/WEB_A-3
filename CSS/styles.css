@@ -46,6 +46,9 @@ button{
   box-shadow: 0 4px 2px -2px black;
   border-radius: 5px;
 }
+button:hover{
+  cursor: hand;
+}
 
 
 /* Header / Footer*/

@@ -240,17 +240,16 @@ function printAutos(){
 
      autoTabelle.rows[i].cells[7].appendChild(imageIcon.cloneNode(true));
      autoTabelle.rows[i].cells[7].addEventListener('click', () =>{
-         
-        var input = document.createElement('input');
-        input.type = 'file';
-        input.click();
+       
+        window.open("Media/beispielAuto.jpg");
      }
      )
      autoTabelle.rows[i].cells[8].appendChild(pencilIcon.cloneNode(true));
      autoTabelle.rows[i].cells[8].addEventListener('click', (e) => {
 
-        location.href = "Fahrzeug_Hinzufuegen.html";
+        location.href = "fahrzeug_hinzufuegen.html";
         
+
 
      })
 

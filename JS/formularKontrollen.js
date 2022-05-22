@@ -7,9 +7,9 @@ const bundeswehrRadioButton = document.getElementById("bundeswehrKennung");
 
 const ausgabeFehlermeldungen = document.getElementById("fehlermeldungen");
 
-const regExFahrgestellnummer = /[QIO\sa-z!,%$&"/()=?.:;-_<>|]+/;
-const regExKennzeichenZivil =  /^[A-Z]{1,3}[A-Z]{1,2}[\d]{1,4}$/; //finde heraus was /g genau macht global?
-const regExKennzeichenBundeswehr = /^[A-Z]{1,3}[A-Z]{1,2}[\d]{1,4}$/;
+const regExFahrgestellnummer = /^[ABCDEFGHJKLMNPRSTUVWXYZ\d]{11}[\d]{6}$/;
+const regExKennzeichenZivil =  /^[A-Z]{1,3}[A-Z]{1,2}[\d]{1,4}$/; 
+const regExKennzeichenBundeswehr = /^Y{1}-{1}\d{1,6}$/;
 
 submitButton.addEventListener('click', (e)=> {
 
@@ -24,11 +24,8 @@ submitButton.addEventListener('click', (e)=> {
 function validiereFahrgestellnummer(){
     let fehlermeldung = [];
 
-    if(regExFahrgestellnummer.test(fahrgestellnummer.value) === true){
-        fehlermeldung.push("Ihre Fahrgestellnummer darf keine Sonderzeichen enthalten, keine Kleinbuchstaben und kein Q,I oder O.");
-    }
-    if(fahrgestellnummer.value.length !== 17){
-         fehlermeldung.push("Ihre Fahrgestellnummer hat nicht die richtige Länge. Diese musss 17 sein.");
+    if(regExFahrgestellnummer.test(fahrgestellnummer.value) === false){
+        fehlermeldung.push("Ihre Fahrgestellnummer darf keine Sonderzeichen enthalten, keine Kleinbuchstaben und kein Q,I oder O. Außerdem muss sie genau 17 Stellen haben.");
     }
     if(bezeichnung.value.length < 1){
         fehlermeldung.push("Die Bezeichnung braucht einen Eintrag.");
@@ -37,10 +34,13 @@ function validiereFahrgestellnummer(){
         fehlermeldung.push("Sie müssen bitten angeben welchen Kennzeichetyp Sie haben.");
     }else {
         if(bundeswehrRadioButton.checked === true){
+            if(regExKennzeichenBundeswehr.test(kennzeichenInhalt.value) === false){
+                fehlermeldung.push("Sie haben ein ungültiges Kennzeicher der Bundeswehr eingegeben.");
+            }
 
         }else{
-            if(regExKennzeichenZivil.test(kennzeichenInhalt.value) === false){
-                fehlermeldung.push("Sie haben ein ungültiges Ziviles Kennzeichen eingegeben.");
+            if(regExKennzeichenZivil.test(kennzeichenInhalt.value) === false || kennzeichenInhalt.value.length > 8){
+                fehlermeldung.push("Sie haben ein ungültiges ziviles Kennzeichen eingegeben.");
             }
         }
     }

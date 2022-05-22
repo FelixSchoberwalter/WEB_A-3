@@ -10,7 +10,6 @@ const ausgabeFehlermeldungen = document.getElementById("fehlermeldungen");
 const regExFahrgestellnummer = /^[ABCDEFGHJKLMNPRSTUVWXYZ\d]{11}[\d]{6}$/;
 const regExKennzeichenZivil =  /^[A-Z]{1,3}[A-Z]{1,2}[\d]{1,4}$/; 
 const regExKennzeichenBundeswehr = /^Y{1}-{1}\d{1,6}$/;
-const regExWMIRegionen = /^B{1}$/;
 
 submitButton.addEventListener('click', (e)=> {
 
@@ -23,7 +22,6 @@ submitButton.addEventListener('click', (e)=> {
 })
 
 function validiereFahrgestellnummer(){
-    let teilFIN = fahrgestellnummer.value.substring(0,3);
     let fehlermeldung = [];
 
     if(regExFahrgestellnummer.test(fahrgestellnummer.value) === false){

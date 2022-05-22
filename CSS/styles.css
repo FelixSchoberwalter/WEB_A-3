@@ -214,6 +214,10 @@ footer {
 
 /* Fahrzeug hinzufügen / bearbeiten */
 
+.radioButtonAuswahl{
+  font-size: larger;
+}
+
 #fehlermeldungen{
   color: red;
   font-weight: 900;
@@ -225,7 +229,7 @@ footer {
   display: grid;
   justify-content: center;
   grid-template-columns: 300px 300px;
-  grid-template-rows: 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px;
+  grid-template-rows: 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px;
   row-gap: 15px;
   padding-bottom: 40px;
 }

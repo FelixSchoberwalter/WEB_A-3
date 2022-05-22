@@ -42,9 +42,14 @@ button{
   box-shadow: 0 4px 2px -2px black;
   border-radius: 5px;
 }
-button:hover{
-
+.foto-upload{  
+  box-shadow: 0 4px 2px -2px black;
+  border-radius: 5px;
 }
+button:hover{
+  cursor: hand;
+}
+
 
 /* Header / Footer*/
 
@@ -209,6 +214,12 @@ footer {
 
 /* Fahrzeug hinzufügen / bearbeiten */
 
+#fehlermeldungen{
+  color: red;
+  font-weight: 900;
+  grid-column: 1/span 2;
+}
+
 .grid-container {
   padding-top: 40px;
   display: grid;
@@ -222,6 +233,9 @@ footer {
 .grid-container p {
   font-size: 28px;
   font-weight: bold;
+}
+.grid-container input [type = "text"]{
+  font-size: 24px;
 }
 
 #seitenName {
@@ -240,30 +254,9 @@ footer {
 }
 
 .attribut-eingabe {
-  background-color: #ffffff;
-}
-
-#foto-upload {
-  grid-column: 1 / span 2;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #224e6b;
-}
-
-#speichern {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  grid-column: 1 / span 2;
-  display: flex;
-  align-items: center;
-  background-color: #224e6b;
-}
-
-.attribut-eingabe {
   display: grid;
   width: 100%;
+  background-color: #ffffff;
 }
 
 .dropdown img {
@@ -280,7 +273,7 @@ footer {
   font-size: 32px;
 }
 
-#foto-upload-Btn{
+.foto-upload{
   grid-column: 1 / span 2;
   flex-grow: 1;
   margin: 0;
@@ -297,11 +290,20 @@ input[type="file"] {
 
 select.dropdown-fahrzeug {
   font-size: 24px;
+  text-align: center;
+}
+
+.grid-container input{
+  font-size: 24px;
+  text-align: center;
 }
 
 @media(max-width: 700px) {
 
   select.dropdown-fahrzeug {
+    font-size: 20px;
+  }
+  .grid-container input{
     font-size: 20px;
   }
 
@@ -316,32 +318,28 @@ select.dropdown-fahrzeug {
     margin-left: 5px;
     margin-right: 5px;
   }
-
-  #foto-upload p{
-    margin-right: 0px;
-  }
-
-  #speichern {
-    margin-top: 10px;
-  }
   .grid-container p{
     font-size: 20px;
+
   }
   .attribut{
     margin-top: 10px;
   }
-  #foto-upload{
-    margin-top: 10px;
-    
-  }
+
 
   #submitSpeichernBtn{
+    margin-top: 10px;
     font-size: 24px;
   }
 
-  #foto-upload-Btn{
+  .foto-upload{
     font-size: 24px;
   }
+
+  #fehlermeldungen {
+    margin-top: 10px;
+  }
+
 
 }
 
@@ -445,6 +443,24 @@ select.dropdownSuche {
 .text {
   padding: 20px 20px 20px 20px;
 }
+.text h3{
+  font-weight: 500;
+}
 hr {
   border: dashed #fff;
+}
+.aufzaehlung{
+  padding-left: 15px;
+
+}
+.aufzaehlung ul{
+  padding-left: 25px;
+}
+.text a{
+  font-weight: 520;
+  color: orange;
+}
+.text ol{
+  padding-left: 20px;
+  color: orange;
 }

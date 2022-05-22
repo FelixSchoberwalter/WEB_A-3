@@ -149,7 +149,6 @@ footer {
     float: right;
     margin-top: -75px;
     margin-right: 50px;
-    font-size: 40px;
     color: #ffffff;
   }
 
@@ -361,6 +360,7 @@ select.dropdown-fahrzeug {
   border: 2px solid black;
 }
 
+
 table{
   border: 2px solid black;
   border-collapse: collapse;
@@ -397,15 +397,21 @@ table th{
 #tabelleAutos td:nth-child(8)
 {
   text-align: center;
-  font-size: 40px;
+  width: 5%;
+  
+
 }
 #tabelleAutos td:nth-child(9){
   text-align: center;
-  font-size: 40px;
+  width: 5%;
+  
+  
+  
 }
 #tabelleAutos td:nth-child(10){
   text-align: center;
-  font-size: 40px;
+  width: 5%;
+  
 }
 
 #suchenButton{

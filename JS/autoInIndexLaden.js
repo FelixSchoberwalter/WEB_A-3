@@ -186,50 +186,48 @@ var autosArray = [
         anmerkung: "-"
     },
 
-    {
-        fahrgestellnummer:  "SDJ63830KX5U09771",
-        hersteller: "Opel",
-        bezeichnung: "Corsa",
-        kraftstoff: "Diesel",
-        farbe: "Schwarz",
-        stellplatz: "A1",
-        anmerkung: "-"
-    },
-
-    {
-        fahrgestellnummer:  "SDJ63830NES463771",
-        hersteller: "Opel",
-        bezeichnung: "Corsa",
-        kraftstoff: "Diesel",
-        farbe: "Schwarz",
-        stellplatz: "A7",
-        anmerkung: "-"
-    },
-
-    {
-        fahrgestellnummer: "1B3AD46LE84KEN62",
-        hersteller: "Skoda",
-        bezeichnung: "Fabio Mont",
-        kraftstoff: "Hybrid",
-        farbe: "Rot",
-        stellplatz: "E7",
-        anmerkung: "-"
-    },
-
-    {
-        fahrgestellnummer: "1B364KN7P8N62962",
-        hersteller: "Skoda",
-        bezeichnung: "Fabio Mont",
-        kraftstoff: "Hybrid",
-        farbe: "Orange",
-        stellplatz: "E9",
-        anmerkung: "-"
-    },
+    
 ]
+
+function autotabelleErstellen(){
+
+    let autoTabelle = document.getElementById("tabelleAutos");
+
+    for(var i = 0; i < autosArray.length;i++){
+
+        var zeile = document.createElement('tr');
+
+        for (var j = 0; j < 10;j++){
+
+            zeile.appendChild(document.createElement('td'));
+            
+        }
+
+        
+
+        autoTabelle.appendChild(zeile)
+
+
+
+    }
+}
+
+
+
+
 
 function printAutos(){
  
-  autoTabelle = document.getElementById("tabelleAutos");
+  let autoTabelle = document.getElementById("tabelleAutos");
+
+  var imageIcon = document.createElement('button');
+  imageIcon.innerHTML = '<img src="Media/image-icon.png"/>';
+
+  let pencilIcon = document.createElement('button');
+  pencilIcon.innerHTML = '<img src="Media/pencil-icon.png"/>';
+
+  var trashIcon = document.createElement('button');
+  trashIcon.innerHTML = '<img src="Media/trash-icon.png"/>';
 
   for (var i = 1; i < autoTabelle.rows.length; i++){
      autoTabelle.rows[i].cells[0].innerHTML = autosArray[i-1].fahrgestellnummer;
@@ -238,24 +236,35 @@ function printAutos(){
      autoTabelle.rows[i].cells[3].innerHTML = autosArray[i-1].kraftstoff;
      autoTabelle.rows[i].cells[4].innerHTML = autosArray[i-1].farbe;
      autoTabelle.rows[i].cells[5].innerHTML = autosArray[i-1].stellplatz;
-     autoTabelle.rows[i].cells[6].innerHTML = autosArray[i-1].anmerkung;
-  }     
+     autoTabelle.rows[i].cells[6].innerHTML = autosArray[i-1].anmerkung;  
+
+     autoTabelle.rows[i].cells[7].appendChild(imageIcon.cloneNode(true));
+     autoTabelle.rows[i].cells[7].addEventListener('click', () =>{
+       
+        window.open("Media/beispielAuto.jpg");
+     }
+     )
+     autoTabelle.rows[i].cells[8].appendChild(pencilIcon.cloneNode(true));
+     autoTabelle.rows[i].cells[8].addEventListener('click', (e) => {
+
+        location.href = "fahrzeug_hinzufuegen.html";
+        
+
+
+     })
+
+     autoTabelle.rows[i].cells[9].appendChild(trashIcon.cloneNode(true));
+     autoTabelle.rows[i].cells[9].addEventListener('click', (e) => {
+
+        var bt = e.target;
+        bt.closest('tr').remove();
+
+     });
+     
+  }  
+  
+  
 }
 
-function printIcons(){
 
-    autoTabelle = document.getElementById("tabelleAutos");
-
-    for (var i = 1; i < autoTabelle.rows.length; i++){
-
-        autoTabelle.rows[i].cells[7].innerHTML = '<i class="fa-regular fa-image"></i>'; 
-        autoTabelle.rows[i].cells[8].innerHTML = '<i class="fa-solid fa-pencil"></i>';
-        autoTabelle.rows[i].cells[9].innerHTML = '<i class="fa-regular fa-trash-can"></i>';
-
-    }
-
-}
-
-printIcons();
-printAutos();
 

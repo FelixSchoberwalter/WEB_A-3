@@ -3,25 +3,23 @@
         <head>
         <title>Carbase</title>
         <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
-        <link rel="stylesheet" href="../CSS/styles.css" />
-        <script defer src="../JS/mobilesSideMenue.js"></script>
-        <script src="https://kit.fontawesome.com/0d52a32f2f.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="CSS/styles.css" />
         <meta charset="utf-8" />
     </head>
-    <body>
+    <body onload = "autotabelleErstellen();printAutos()">
         <header>
 
             <nav>
                 <ul>
                   <li>
-                    <a id="logo" href="/index.html">
-                      <img src="../Media/logo.png" alt="Firmenlogo" />
+                    <a id="logo" href="index.html">
+                      <img src="Media/logo.png" alt="Firmenlogo" />
                     </a>
                   </li>
-                  <li><a href="/index.html"> Home </a></li>
-                  <li><a href="/ueber_uns.html"> &Uuml;ber uns</a></li>
+                  <li><a href="index.html"> Home </a></li>
+                  <li><a href="ueber_uns.html"> &Uuml;ber uns</a></li>
                   <li>
-                    <a href="/fahrzeug_hinzufuegen.html">
+                    <a href="fahrzeug_hinzufuegen.html">
                       Fahrzeug <br />
                       hinzuf&uuml;gen
                     </a>
@@ -30,15 +28,15 @@
               </nav>
         
             <div id="dropdown-menü" onclick="menue('mainIndex')">
-              <i class="fa-solid fa-bars" ></i>
+              <img src="Media/burgerIcon.png"/>
             </div>
         
             <div id="sideMenue">
               <ul id="sideMenueNav">
-                <li><a href="/index.html"> Home </a></li>
+                <li><a href="index.html"> Home </a></li>
                 <li><a href="ueber_uns.html"> &Uuml;ber uns</a></li>
                 <li>
-                  <a href="/fahrzeug_hinzufuegen.html">
+                  <a href="fahrzeug_hinzufuegen.html">
                     Fahrzeug <br>hinzuf&uuml;gen
                   </a>
                 </li>
@@ -212,108 +210,9 @@
              <th></th>
              <th></th>
            </tr>       
-           <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-         
           
-
+        
        </table>
-
-      
 
         </main>
 
@@ -322,9 +221,9 @@
             <div class="rechtliches">
                 <h2>Rechtliches</h2>
         
-                <a href="/impressum.html"> Impressum </a> <br />
-                <a href="/agb.html"> AGB </a> <br />
-                <a href="/datenschutz.html"> Datenschutz </a> <br />
+                <a href="impressum.html"> Impressum </a> <br />
+                <a href="agb.html"> AGB </a> <br />
+                <a href="datenschutz.html"> Datenschutz </a> <br />
               </div>
         
               <div class="kontakt">
@@ -339,6 +238,8 @@
               </div>
 
         </footer>
-        <script src="../JS/autoInIndexLaden.js"></script>
+        <script src="JS/autoInIndexLaden.js"></script>
+        <script src="JS/mobilesSideMenue.js"></script>
+
     </body>
     </html>

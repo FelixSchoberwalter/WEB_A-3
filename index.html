@@ -63,7 +63,7 @@
 
                <form>
                <tr>
-                <td><input class="eingabeSuche" type="text" name="Fahrgestellnummer"/></td>
+                <td><input class="eingabeSuche" type="text" id ="nr"name="Fahrgestellnummer"/></td>
                 <td> 
                 <select class="dropdownSuche" name="Hersteller">
                   <option value="" selected disabled hidden>-Bitte wählen-</option>
@@ -81,7 +81,7 @@
                   <input class="eingabeSuche" type="text" name="Bezeichnung"  />
                 </td>
                 <td>
-                  <select class="dropdownSuche" name="Kraftstoff">
+                  <select class="dropdownSuche" id ="kraftstoffValue"name="Kraftstoff">
                     <option value="" selected disabled hidden>-Bitte wählen-</option>
                     <option>Diesel</option>
                     <option>Benzin</option>
@@ -192,7 +192,7 @@
               </tr>
             </form>
            </table>
-            <button type="submit" id="suchenButton">SUCHEN</button>
+            <button type="button" id="suchenButton" onclick="tabelleFilter()">SUCHEN</button>
         </div>
         
 
@@ -205,6 +205,8 @@
              <th>Kraftstoff</th>
              <th>Farbe</th>
              <th>Stellplatz</th>
+             <th>Kennzeichen</th>
+             <th>Kennzeichenart</th>
              <th>Anmerkung</th>
              <th></th>
              <th></th>
@@ -240,6 +242,7 @@
         </footer>
         <script src="JS/autoInIndexLaden.js"></script>
         <script src="JS/mobilesSideMenue.js"></script>
+        <script src="JS/filtertabelle.js"></script>
 
     </body>
     </html>

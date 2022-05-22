@@ -147,8 +147,8 @@ footer {
   #dropdown-menü {
     display: flex;
     float: right;
-    margin-top: -75px;
-    margin-right: 50px;
+    margin-top: -85px;
+    margin-right: 10px;
     color: #ffffff;
   }
 
@@ -439,7 +439,6 @@ select.dropdownSuche {
   text-align: center;
   font-size: 12px;
 }
-
 
 
 /* Datenschutz/Impressum/AGB */

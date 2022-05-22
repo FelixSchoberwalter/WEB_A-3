@@ -442,3 +442,18 @@ select.dropdownSuche {
 hr {
   border: dashed #fff;
 }
+.aufzaehlung{
+  padding-left: 15px;
+
+}
+.aufzaehlung ul{
+  padding-left: 25px;
+}
+.text a{
+  font-weight: 520;
+  color: orange;
+}
+.text ol{
+  padding-left: 20px;
+  color: orange;
+}
